@@ -1,4 +1,4 @@
-# Blockchain Ethereum Metamask dApp
+# Blockchain Ethereum Metamask App
 
 ![Screenshot](./client/public/screenshot.png)
 
@@ -61,7 +61,7 @@ touch deploy.js
     - Have a MetaMask wallet (which can be installed in [chrome webstore](https://chromewebstore.google.com/)).
     - And have some ethereum balnce on it (test ethereum will aslo work). How to gain test ethereum you can check [here](#-faucets).
     - Also account on [Alchemy](https://www.alchemy.com/), whikch is platform for deploying Smart Contracts.
-- After doing all mentioned above need to create an application in [Alchemy](https://www.alchemy.com/), which you can do easily in you [dashbaord page](https://dashboard.alchemy.com/apps) right after registration. *Notice you need to select a test ethereum network for your application if you are developing it. At this moment most popular test network is [Seploia](https://sepolia.etherscan.io/)*.
+- After doing all mentioned above need to create an application in [Alchemy](https://www.alchemy.com/), which you can do easily in you [dashbaord page](https://dashboard.alchemy.com/apps) right after registration. *Notice you need to select a test ethereum network for your application if you are developing it. At this moment most popular test network is [Sepolia](https://sepolia.etherscan.io/)*.
 - After creatiaon you will receive `Http` and `API` keys whcih you need to use in your `hardhat.config.js` file instead of `process.env` placeholders. In this file you need to set configs for your network where you are going to deploy. Check [`hardhat.config.js`](./smart_contract/hardhat.config.js) file.
 
 **Please notice that `@nomiclabs/hardhat-waffle` module is abit old for deplyoing Smart Contract tests, `@nomicfoundation/hardhat-toolbox` can be used instead. Just I am not sure how exactly, you can try and write in discussions if you are feeling lucky with that :)*
